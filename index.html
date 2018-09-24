@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <main class="app-container">
         <h3>List of tasks to do!</h3>
@@ -26,49 +31,55 @@
         </section>
         <section class="tasks-container">
             <ul>
-                <li>
-                        <span class="input-group-btn">
-                                <button class="btn btn-default toggle-complete-btn" >
-                                        <i class="fas fa-check"></i>
-                                </button>
-                            </span>
-                        <input type="text" class="form-control" placeholder="Task name">
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger delete-task-btn">
-                                    <i class="fas fa-times"></i>
-                            </button>
-                        </span>
+                <li class="single-task">
+                    <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default toggle-complete-btn">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Task name" value="umycc zeby">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger delete-task-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </span>
                 </li>
-                <li>
-                        <span class="input-group-btn">
-                                <button class="btn btn-default toggle-complete-btn" >
-                                        <i class="fas fa-check"></i>
-                                </button>
-                            </span>
-                        <input type="text" class="form-control" placeholder="Task name">
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger delete-task-btn">
-                                    <i class="fas fa-times"></i>
-                            </button>
-                        </span>
+                <li class="single-task">
+                    <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default toggle-complete-btn">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Task name" value="Zrobic obiad">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger delete-task-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </span>
+                </div>
                 </li>
-                <li>
-                        <span class="input-group-btn">
-                                <button class="btn btn-default toggle-complete-btn" >
-                                        <i class="fas fa-check"></i>
-                                </button>
-                            </span>
-                        <input type="text" class="form-control" placeholder="Task name">
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger delete-task-btn">
-                                    <i class="fas fa-times"></i>
-                            </button>
-                        </span>
+                <li class="single-task">
+                    <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default toggle-complete-btn">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Task name" value="umyc okna">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger delete-task-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </span>
+                </div>
                 </li>
             </ul>
         </section>
     </main>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

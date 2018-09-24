@@ -1,0 +1,34 @@
+body{
+    background: url('../img/background.jpg') center/cover fixed no-repeat ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-container{
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background: rgba(255,255,255, 0.4);
+    box-shadow: 0 0 62px rgba(0, 0, 0, 0.1);
+}
+html,body{
+    height: 100%;
+}
+.app-container h3{
+    margin: 0 0 25px;
+}
+
+/* Nowe zadanie - new task  */
+.new-task-container{
+    margin-bottom: 25px;
+
+}
+.tasks-container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single-task{
+    margin-bottom: 12px;
+}
+
