@@ -1,7 +1,17 @@
 function addNewTask(title){
-    let taskLi = document.createElement('li');
+    var taskLi = document.createElement('li');
     taskLi.classList.add('single-task');
     taskLi.innerHTML = prepareTaskHTML(title);
+    // events toggle and delete
+    var toggleCompleteBtn = taskLi.querySelector('.toggle-complete-btn');
+    var deleteBtn = taskLi.querySelector('.delete-task-btn');
+    toggleCompleteBtn.addEventListener('click', function(){
+        toggleTaskComplete(this);
+    });
+    deleteBtn.addEventListener('click', function(){
+        deleteTask(this);
+
+    });
     //Add task to DOM
     tasksContainer.appendChild(taskLi);
 }
@@ -20,4 +30,16 @@ function prepareTaskHTML(title){
         '</button>' +
     '</span>'+
     '</div>';
+}
+// adding new tasks events
+function bindAddTaskEvents() {
+    //on submit
+    newTaskform.addEventListener('submit', function(event){
+        event.preventDefault();
+        var title = this.querySelector('input').value;
+        if(title){
+            addNewTask(title);
+        }
+        
+    });
 }
