@@ -11,8 +11,8 @@ function toggleTaskComplete(task){
     task.classList.toggle('btn-success');
 }
 //delete task
-function deleteTask () {
-    var liToDelete = task.closest('li');
-    task.closest('ul').removeChild(liToDelete);
+function deleteTask (deleteBtn) {
+    var liToDelete = deleteBtn.closest('li');
+    deleteBtn.closest('ul').removeChild(liToDelete);
 //rodzic.removeChild();
   }

@@ -7,4 +7,4 @@ let tasksContainer = document.querySelector('.tasks-container ul')
 document.addEventListener('DOMContentLoaded', function(){
     bindAddTaskEvents();
     showTasks();
-})
+});
